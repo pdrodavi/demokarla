@@ -205,10 +205,10 @@
                             var phone = $("#phone").val();
                             var treatment = $("#treatment").val();
                             var time = $("#time").val();
-                            var date = $("#date").val();
-
+                            var date = $("#date").val();	
+				
                             if (name != "" && email != "" && phone != "" && treatment != "" && treatment != null && time != "" && date != "") {
-                                window.open('https://api.whatsapp.com/send?phone=5583999801146&text=Olá,' +
+                                window.location.replace('whatsapp://send?phone=5583999801146&text=Olá,' +
                                     ' meu nome é: ' + name + ', meu e-mail: ' + email + ', meu telefone: ' + phone + '. ' +
                                     'Gostaria de saber se tem horário disponível para o tratamento: ' + treatment + ', ' +
                                     'no dia: ' + date + ', às: ' + time + ' horas.' + ' Aguardo retorno!');
